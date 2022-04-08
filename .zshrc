@@ -1,3 +1,8 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
 
@@ -107,3 +112,12 @@ source <(kubectl completion zsh)
 alias k=kubectl
 compdef __start_kubectl k
 
+eval "$(pyenv init -)"
+
+# Created by `pipx` on 2022-02-09 13:21:51
+export PATH="$PATH:/Users/thomashervey/.local/bin"
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####

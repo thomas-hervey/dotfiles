@@ -11,6 +11,7 @@ brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'gh'
 brew 'git'
+brew 'git-flow'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'
@@ -18,6 +19,7 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'svn' # Needed to install fonts
+
 
 # Spatie Medialibrary
 brew 'jpegoptim'
@@ -27,7 +29,15 @@ brew 'svgo'
 brew 'gifsicle'
 
 # Development
+brew 'flipper' # mobile app debugging
+brew 'gdal'
 brew 'imagemagick'
+brew 'java'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
+brew  'openssl readline sqlite3 xz zlib' # python build dependencies
+brew 'pipx' # python package + virtual env manager
+brew 'anaconda' # anaconda python UI
 brew 'kubectl'
 brew 'meilisearch'
 brew 'mysql'
@@ -38,14 +48,21 @@ brew 'redis'
 brew 'tree'
 brew 'yarn'
 
+# libpostal (postal code parser) dependencies
+brew 'curl'
+brew 'autoconf'
+brew 'automake'
+brew 'libtool'
+brew 'pkg-config'
+
 # Apps
 cask 'brewservicesmenubar'
 cask 'daisydisk'
-cask 'dbngin'
+cask 'dbeaver'
+cask 'pgadmin4'
 cask 'discord'
 cask 'docker'
 cask 'dropbox'
-cask 'fastlane'
 cask 'figma'
 cask 'firefox'
 cask 'flux'
@@ -58,15 +75,18 @@ cask 'imageoptim'       # makes images load faster
 cask 'inkscape'
 cask 'insomnia'         # Build APIs that work
 cask 'iterm2'
-cask 'java'
+cask 'fig'
 cask 'malwarebytes'
 cask 'meld'
 cask 'mendeley'
+cask 'monitorcontrol'
 cask 'mysqlworkbench'
+cask 'notion'
 cask 'open-in-code'
 cask 'openrefine'
 cask 'pastebot'
 cask 'postman'
+cask 'postico'
 cask 'protege'
 cask 'react-native-debugger'
 cask 'slack'
