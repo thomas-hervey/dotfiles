@@ -32,6 +32,7 @@ brew 'gifsicle'
 brew 'flipper' # mobile app debugging
 brew 'gdal'
 brew 'imagemagick'
+brew 'jenv'
 brew 'java'
 brew 'pyenv'
 brew 'pyenv-virtualenv'

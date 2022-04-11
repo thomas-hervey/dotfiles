@@ -42,3 +42,12 @@ brew cleanup
 brew doctor
 
 echo 'Finished installing pyenv. Double check that pyenv was injected in zprofile and zshrc.'
+
+
+## Install Java versions
+echo 'Installing Java + Jenv for Java version management.'
+echol 'Look up `jenv` for steps on how to add versions'
+brew 'jenv'
+brew 'java'
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
