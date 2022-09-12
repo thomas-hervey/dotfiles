@@ -34,6 +34,7 @@ brew 'gdal'
 brew 'imagemagick'
 brew 'jenv'
 brew 'java'
+brew 'mactex'
 brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew  'openssl readline sqlite3 xz zlib' # python build dependencies
