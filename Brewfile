@@ -101,6 +101,7 @@ cask 'tunnelbear'
 cask 'visual-studio-code'
 cask 'xquartz'
 cask 'zoom'
+cask 'zotero'
 
 # Quicklook
 cask 'qlmarkdown'
