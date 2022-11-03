@@ -39,7 +39,7 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew  'openssl readline sqlite3 xz zlib' # python build dependencies
 brew 'pipx' # python package + virtual env manager
-brew 'anaconda' # anaconda python UI
+# brew 'anaconda' # anaconda python UI
 brew 'kubectl'
 brew 'meilisearch'
 brew 'mysql'
@@ -60,7 +60,7 @@ brew 'pkg-config'
 # Apps
 cask 'brewservicesmenubar'
 cask 'daisydisk'
-cask 'dbeaver'
+# cask 'dbeaver'
 cask 'pgadmin4'
 cask 'discord'
 cask 'docker'

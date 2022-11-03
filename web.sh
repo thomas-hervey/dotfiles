@@ -18,6 +18,7 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
+echo "installing node, npm, yarn"
 brew install node											# V8 JS
 brew install npm											# Package manager
 brew install yarn											# Package manager
@@ -25,11 +26,19 @@ brew install yarn											# Package manager
 # Remove outdated versions from the cellar.
 brew cleanup
 
+echo "Installing global npm packages..."
 npm install -g create-react-app       # React starter
 npm install -g eslint									# JS linter
 npm install -g babel-eslint						# es7 eslint
 npm install -g eslint-config-airbnb		# Airbnb's .eslintrc as an extensible shared config
 npm install -g eslint-config-prettier	# Turns off all rules that are unnecessary or might conflict with Prettier.
+
+
+npm install -g typescript # install typescript
+npm install -g ts-node # install ts-node
+npm install -g tslint # install tslint
+
+
 npm install -g expo-cli								# The command-line tool for creating and publishing Expo apps
 npm install -g express								# Fast, unopinionated, minimalist web framework for node.
 npm install -g express-generator			# Express' application generator

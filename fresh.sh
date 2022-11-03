@@ -28,11 +28,11 @@ brew bundle --file $DOTFILES/Brewfile
 
 sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk # symlink Java after installing it via homebrew
 
-# Create a Sites directory
+# Create a Projects directory
 mkdir $HOME/Projects
 
-# Symlink the Mackup config file to the home directory
-ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+# # Symlink the Mackup config file to the home directory
+# ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Run web tool installers
 source $DOTFILES/web.sh

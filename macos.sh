@@ -12,12 +12,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "iMac Hervey"
-sudo scutil --set HostName "iMac Hervey"
-# commented because these two didnt seem to be working
-sudo scutil --set LocalHostName "iMac Hervey"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "iMac Hervey"
+# # Set computer name (as done via System Preferences → Sharing)
+# sudo scutil --set ComputerName "iMac Hervey"
+# sudo scutil --set HostName "iMac Hervey"
+# # commented because these two didnt seem to be working
+# sudo scutil --set LocalHostName "iMac Hervey"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "iMac Hervey"
 
 # Set standby delay to 24 hours (default is 1 hour or 3600)
 #sudo pmset -a standbydelay 86400
@@ -671,9 +671,9 @@ start_if_needed() {
   true
 }
 
-# Install the Solarized Light theme for iTerm
-start_if_needed iTerm
-open "${HOME}/Projects/admin/mac-dev/init/Solarized Light.itermcolors"
+# # Install the Solarized Light theme for iTerm
+# start_if_needed iTerm
+# open "${HOME}/Projects/admin/mac-dev/init/Solarized Light.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false

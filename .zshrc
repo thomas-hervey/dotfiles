@@ -121,3 +121,10 @@ export PATH="$PATH:/Users/thomashervey/.local/bin"
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
+
+#### PYENV VIRTUALENV INIT ####
+eval "$(pyenv virtualenv-init -)"
+
+#### JAVA ENV MANAGER ####
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
