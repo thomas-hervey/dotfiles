@@ -30,25 +30,25 @@ brew 'gifsicle'
 
 # Development
 brew 'flipper' # mobile app debugging
-brew 'gdal'
-brew 'imagemagick'
-brew 'jenv'
-brew 'java'
-brew 'mactex'
-brew 'pyenv'
-brew 'pyenv-virtualenv'
+brew 'gdal'   # geospatial data
+brew 'imagemagick'  # Needed to install fonts
+brew 'jenv'   # Java version manager
+brew 'java'   # Java 8
+brew 'mactex'   # LaTeX
+brew 'pyenv'  # Python version manager
+brew 'pyenv-virtualenv' # Python virtual environment manager
 brew  'openssl readline sqlite3 xz zlib' # python build dependencies
 brew 'pipx' # python package + virtual env manager
 # brew 'anaconda' # anaconda python UI
-brew 'kubectl'
-brew 'meilisearch'
-brew 'mysql'
-brew 'nginx'
-brew 'node'
-brew 'pv'
-brew 'redis'
-brew 'tree'
-brew 'yarn'
+brew 'kubectl'  # kubernetes
+brew 'meilisearch'  # search engine
+brew 'mysql'  # mysql database
+brew 'nginx' # web server
+brew 'node' # Node.js
+brew 'pv' # pipeviewer (monitor data as it passes through a pipeline)
+brew 'redis' # key-value store
+brew 'tree' # tree view of directories
+brew 'yarn' # node package manager
 
 # libpostal (postal code parser) dependencies
 brew 'curl'
@@ -58,18 +58,17 @@ brew 'libtool'
 brew 'pkg-config'
 
 # Apps
-cask 'brewservicesmenubar'
-cask 'daisydisk'
+cask 'brewservicesmenubar'  # brew services manager
+cask 'daisydisk'  # disk usage
 # cask 'dbeaver'
-cask 'pgadmin4'
+cask 'pgadmin4'   # postgresql database admin
 cask 'discord'
 cask 'docker'
 cask 'dropbox'
-cask 'figma'
+cask 'figma'  # design
 cask 'firefox'
-cask 'flux'
-cask 'gimp'
-cask 'github'
+cask 'flux'   # screen color temperature
+cask 'gimp'   # image editor
 cask 'google-chrome'
 cask 'gpg-suite'        # One simple package with everything you need, to protect your emails and files.
 cask 'helo'             # Painless local email testing for web developers.
@@ -77,31 +76,30 @@ cask 'imageoptim'       # makes images load faster
 cask 'inkscape'
 cask 'insomnia'         # Build APIs that work
 cask 'iterm2'
-cask 'fig'
+cask 'fig'           # terminal multiplexer
 cask 'malwarebytes'
-cask 'meld'
-cask 'mendeley'
-cask 'monitorcontrol'
-cask 'mysqlworkbench'
-cask 'notion'
+cask 'meld'            # visual diff tool
+cask 'monitorcontrol'   # Control your external monitor brightness
+cask 'mysqlworkbench'   # mysql database admin
+cask 'notion'        # All-in-one workspace
 cask 'open-in-code'
-cask 'openrefine'
-cask 'pastebot'
-cask 'postman'
-cask 'postico'
-cask 'protege'
+cask 'openrefine'   # Ontology editor
+cask 'pastebot'      # Clipboard manager
+cask 'postman'     # API development
+cask 'postico'   # Postgres database admin
+cask 'protege'         # ontology editor
 cask 'react-native-debugger'
 cask 'slack'
 cask 'spotify'
 cask 'steam'
-cask 'tableplus'
-cask 'the-unarchiver'
-cask 'transmit'
-cask 'tunnelbear'
+cask 'tableplus'  # database admin
+cask 'the-unarchiver' # unarchive files
+cask 'transmit' # ftp client
+cask 'tunnelbear'   # VPN
 cask 'visual-studio-code'
 cask 'xquartz'
 cask 'zoom'
-cask 'zotero'
+cask 'zotero'   # reference manager
 
 # Quicklook
 cask 'qlmarkdown'
