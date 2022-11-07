@@ -4,6 +4,8 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
+tap 'mongodb/brew'
+
 
 # Binaries
 brew 'awscli'
@@ -43,6 +45,7 @@ brew 'pipx' # python package + virtual env manager
 brew 'kubectl'  # kubernetes
 brew 'meilisearch'  # search engine
 brew 'mysql'  # mysql database
+brew 'mongodb-community@6.0' # mongodb database
 brew 'nginx' # web server
 brew 'node' # Node.js
 brew 'pv' # pipeviewer (monitor data as it passes through a pipeline)
