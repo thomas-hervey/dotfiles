@@ -47,7 +47,7 @@ brew 'meilisearch'  # search engine
 brew 'mysql'  # mysql database
 brew 'mongodb-community@6.0' # mongodb database
 brew 'nginx' # web server
-brew 'node' # Node.js
+brew 'nvm' # node version manager (NOTE: using homebrew isn't officially supported by nvm)
 brew 'pv' # pipeviewer (monitor data as it passes through a pipeline)
 brew 'redis' # key-value store
 brew 'tree' # tree view of directories

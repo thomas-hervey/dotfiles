@@ -76,7 +76,14 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow npm)
+plugins=(
+  fig
+  git
+  git-flow
+  nvm
+  npm
+  yarn
+  )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,3 +135,7 @@ eval "$(pyenv virtualenv-init -)"
 #### JAVA ENV MANAGER ####
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+#### Node version manager ####
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

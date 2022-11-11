@@ -18,13 +18,29 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-echo "installing node, npm, yarn"
-brew install node											# V8 JS
-brew install npm											# Package manager
-brew install yarn											# Package manager
+echo "installing nvm"
+brew install nvm											# node version manager
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+echo "installing a version of node"
+# test to see if nvm folder exists
+if [ ! -d ~/.nvm ]; then
+  mkdir ~/.nvm
+fi
+# export nvm dir path to .zshrc
+printf '\n#### Node version manager ####\n' >> ~/.zshrc
+echo 'export NVM_DIR=~/.nvm'  >> ~/.zshrc
+echo 'source $(brew --prefix nvm)/nvm.sh' >> .zshrc
+
+# install node
+nvm install node
+
+
+echo "Installing npm, yarn"
+brew install npm											# Package manager
+brew install yarn											# Package manager
 
 echo "Installing global npm packages..."
 npm install -g create-react-app       # React starter
