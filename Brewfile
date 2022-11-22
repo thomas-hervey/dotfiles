@@ -83,6 +83,7 @@ cask 'fig'           # terminal multiplexer
 cask 'malwarebytes'
 cask 'meld'            # visual diff tool
 cask 'monitorcontrol'   # Control your external monitor brightness
+cask 'mongodb-compass' # mongodb database admin
 cask 'mysqlworkbench'   # mysql database admin
 cask 'notion'        # All-in-one workspace
 cask 'open-in-code'
