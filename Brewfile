@@ -31,6 +31,7 @@ brew 'svgo'
 brew 'gifsicle'
 
 # Development
+brew 'cookiecutter' # project templating
 brew 'flipper' # mobile app debugging
 brew 'gdal'   # geospatial data
 brew 'google-cloud-sdk' # Google Cloud Platform
