@@ -33,9 +33,11 @@ brew 'gifsicle'
 # Development
 brew 'flipper' # mobile app debugging
 brew 'gdal'   # geospatial data
+brew 'google-cloud-sdk' # Google Cloud Platform
 brew 'imagemagick'  # Needed to install fonts
 brew 'jenv'   # Java version manager
 brew 'java'   # Java 8
+brew 'skaffold' # Kubernetes local development
 brew 'mactex'   # LaTeX
 brew 'pyenv'  # Python version manager
 brew 'pyenv-virtualenv' # Python virtual environment manager
@@ -43,6 +45,7 @@ brew  'openssl readline sqlite3 xz zlib' # python build dependencies
 brew 'pipx' # python package + virtual env manager
 # brew 'anaconda' # anaconda python UI
 brew 'kubectl'  # kubernetes
+brew 'kustomize' # kubernetes config management
 brew 'meilisearch'  # search engine
 brew 'mysql'  # mysql database
 brew 'mongodb-community@6.0' # mongodb database
