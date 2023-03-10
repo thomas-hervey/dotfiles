@@ -39,28 +39,32 @@ nvm install node
 
 
 echo "Installing npm, yarn"
-brew install npm											# Package manager
-brew install yarn											# Package manager
+brew install npm                      # Package manager
+brew install yarn                     # Package manager
 
 echo "Installing global npm packages..."
-npm install -g create-react-app       # React starter
-npm install -g eslint									# JS linter
-npm install -g babel-eslint						# es7 eslint
-npm install -g eslint-config-airbnb		# Airbnb's .eslintrc as an extensible shared config
-npm install -g eslint-config-prettier	# Turns off all rules that are unnecessary or might conflict with Prettier.
-
-
-npm install -g typescript # install typescript
-npm install -g ts-node # install ts-node
-npm install -g tslint # install tslint
-
-
-npm install -g expo-cli								# The command-line tool for creating and publishing Expo apps
-npm install -g express								# Fast, unopinionated, minimalist web framework for node.
-npm install -g express-generator			# Express' application generator
+npm install -g @11ty/eleventy         # Static site generator
 npm install -g @google-cloud/storage  # GCS
+npm install -g @nestjs/cli            # NestJS API scaffolding
+npm install -g babel-eslint           # es7 eslint
+npm install -g commitizen             # Commit convention
+npm install -g create-expo-app        # Expo starter
+npm install -g create-react-app       # React starter
+npm install -g detox-cli              # grey-box E2E testing for React Native
+npm install -g eslint                 # JS linter
+npm install -g eslint-config-airbnb   # Airbnb's .eslintrc as extensable config
+npm install -g eslint-config-prettier # Make rules work with prettier
+npm install -g express                # Fast, unopinionated, web framework
+npm install -g express-generator      # Express' application generator
+npm install -g firebase-tools         # Google Firebase CLI
 npm install -g lighthouse             # Audit tool
 npm install -g loadtest               # API load testing
-npm install -g @nestjs/cli            # NestJS API scaffolding
-npm install -g prettier								# Prettier is an opinionated code formatter
-npm install -g webpack								# Packs CommonJs/AMD modules for the browser
+npm install -g npm install -g prettier  # Code formatter
+npm install -g react-native-cli       # React Native CLI
+npm install -g run-s                  # Run multiple npm-scripts in parallel
+npm install -g ts-node                # install ts-node
+npm install -g tslint                 # install tslint
+npm install -g typescript             # install typescript
+npm install -g vercel                 # Vercel CLI
+npm install -g webpack                # Packs CommonJs/AMD modules for the browser
+
