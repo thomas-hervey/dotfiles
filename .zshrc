@@ -80,7 +80,6 @@ plugins=(
   fig
   git
   git-flow
-  nvm
   npm
   yarn
   )
@@ -124,18 +123,35 @@ eval "$(pyenv init -)"
 # Created by `pipx` on 2022-02-09 13:21:51
 export PATH="$PATH:/Users/thomashervey/.local/bin"
 
-#### FIG ENV VARIABLES ####
+#### NOTE: PYENV VIRTUALENV INIT ####
+eval "$(pyenv virtualenv-init -)"
+
+#### NOTE: JAVA ENV MANAGER ####
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+#### NOTE: Node version manager ####
+export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
+source ~/.nvm/nvm.sh
+
+#### NOTE: Ruby version manager ####
+eval "$(rbenv init - zsh)"
+
+#### NOTE: FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
 
-#### PYENV VIRTUALENV INIT ####
-eval "$(pyenv virtualenv-init -)"
+#### NOTE: PERCY ENV VARIABLES (visual testing tool) ####
+export PERCY_TOKEN=web_9eca266ae5a9f803a54b6e8a1cdadc70285639e087552dfaf45dcd8f0398f662
+# pnpm
+export PNPM_HOME="/Users/thomashervey/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
-#### JAVA ENV MANAGER ####
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-#### Node version manager ####
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# NOTE: Reduces duplicates within $PATH
+typeset -U PATH

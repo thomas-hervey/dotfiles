@@ -213,3 +213,8 @@ alias krr='kubectl rollout restart deployment/'         # Rolling restart of a d
 # Helm
 alias hsh='helm search hub'                 # shows you all of the available charts from The Artifact Hub
 alias hsr='helm search repo'                # searches the repositories that you have added to your local helm client
+
+######
+# PATH
+######
+alias path="echo $PATH | sed 's/:/\n/g' | sort | uniq -c"
