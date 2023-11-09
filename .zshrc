@@ -77,11 +77,9 @@ ZSH_CUSTOM=$DOTFILES
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  fig
   git
   git-flow
   npm
-  yarn
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -104,9 +102,7 @@ export LANG=en_US.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# NOTE: Example aliases. Other aliases are defined in alaises.zsh.
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
@@ -139,7 +135,7 @@ source ~/.nvm/nvm.sh
 eval "$(rbenv init - zsh)"
 
 #### NOTE: FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
+# Please make sure t`his block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
 
